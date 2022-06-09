@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* custom styles */
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+:root{
+    --primary:rgb(75,182,104);
+    --secondary:rgb(34,41,70);
+    --tertiary:rgb(233,236,252);
+}
+html{
+    font-size: 10px;
+}
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    background-color: var(--secondary);
+    text-align: center;
+
+}
+.padding{
+    padding: 2rem 0rem;
+}
+nav li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0 1rem;
+ 
+}
+nav{
+    padding: 2rem 0;
+}
+.flex-mobile{
+    display: flex;
+    justify-content:center;
+}
+.hero{
+    background-color: var(--tertiary);
+}
+header img{
+    width: 25%;
+}
+.hero img, .blog img{
+    width: 100%;
+}
+h2{
+    font-size :4rem;
+    font-weight: 600;
+
+}
+.hero p{
+    font-size: 1.8rem;
+    color: grey;
+
+}
+.btn{
+    display: inline-block;
+    padding: 12px 24px;
+    color: #fff;
+    background-color: var(--primary);
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+
+}
+
+
+h1{
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+
+}
+.green{
+    color: var(--primary);
+}
+h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.blog p{
+    font-size: 1.5rem;
+    color: grey;
+}
+.card{
+    margin: 2rem 0  ;
+}
+footer{
+    background-color: var(--secondary);
+    margin: 0 auto;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.8rem;
+    padding: 2rem;
+
+}
+footer p{
+    margin-bottom: 1rem;
+}
+footer a{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2.5rem;
+    padding: 0rem 1rem;
+}
+ 
+@media screen and (min-width:768px){
+   html{
+       font-size: 12px;
+   }
+    .flex{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   header img{
+    width: 100%;
+   }
+   .flex-48{
+    flex: 0 1 48%;
+   }
+   .img-content{
+       order:2;
+   }
+   h1{
+       margin-top: 2.5rem;
+   }
+   .flex-30{
+       flex: 0 1 30%;
+   }
+   footer p{
+    margin-bottom: 0rem;
+    }
+    footer{
+        padding: 2rem 10rem;
+    }
+}
